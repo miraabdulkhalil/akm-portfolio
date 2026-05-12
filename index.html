@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Abdul Khalil Mira | IT Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <img src="akmlogo.png" alt="AKM Logo" class="logo-img">
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME SECTION - No scroll-trigger, visible immediately -->
+    <section id="home">
+      <div class="container hero">
+        <div class="hero-content">
+          <h1>Abdul Khalil M. Mira</h1>
+          <p><span class="highlight">4th Year IT Student</span> | Explorer · Lifelong Learner · Builder</p>
+          <p>A dedicated 4th-year IT student committed to developing innovative digital solutions that address real-world problems. Eager to apply technical knowledge and skills in a professional environment while continuously learning and adapting to emerging technologies.</p>
+          <p style="margin-top: 1.2rem;"><i class="fas fa-map-marker-alt" style="color:#c0c0c0;"></i>  Davao Del Norte Philippines · Open for opportunities</p>
+        </div>
+        <div class="hero-image">
+          <img class="profile-pic" src="mypic.png" alt="Abdul Khalil M. Mira profile photo">
+        </div>
+      </div>
+    </section>
+
+    
+
+
+    <!-- PROJECTS SECTION - Everything pops up on scroll -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title scroll-trigger">📁 Projects Created</h2>
+        <div class="projects-grid">
+          <div class="project-card scroll-trigger">
+            <img class="project-img" src="eskwela.png" alt="E SKWELA platform">
+            <div class="project-info">
+              <h3>E SKWELA</h3>
+              <p class="project-description">A web-based Alternative Learning System (ALS) platform that manages student registration, grade level assessment, learning modules, class schedules, teacher assignments, and administrative approval workflows for out-of-school youth and adult learners.</p>
+              <p class="tech-stack">(Django, SQLite3, HTML/CSS, JavaScript, FontAwesome, Bootstrap)</p>
+            </div>
+          </div>
+          <div class="project-card scroll-trigger">
+            <img class="project-img" src="papaya.png" alt="PapayaFresh AI app">
+            <div class="project-info">
+              <h3>PapayaFresh</h3>
+              <p class="project-description">A mobile-based AI system that predicts papaya shelf life using image processing and CNN. Users capture or upload a papaya photo, and the app analyzes color and texture to classify ripeness stages (Unripe, Partially Ripe, Ripe, Overripe) and estimates remaining shelf life.</p>
+              <p class="tech-stack">(Flutter, TensorFlow Lite, Firebase, MobileNetV2)</p>
+            </div>
+          </div>
+          <div class="project-card scroll-trigger">
+            <img class="project-img" src="elect.png" alt="DevConnect Forum">
+            <div class="project-info">
+              <h3>DevConnect Forum</h3>
+              <p class="project-description">Community-driven developer Q&A platform with markdown support, upvoting system, and user authentication — built using Django and Bootstrap.</p>
+              <p class="tech-stack">(Django, Bootstrap, SQLite, JavaScript)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES SECTION - Pops up on scroll -->
+    <section id="certificates">
+      <div class="container">
+        <h2 class="section-title scroll-trigger">🎓 Certifications & Achievements</h2>
+        <div class="certs-container">
+          <div class="cert-card scroll-trigger">
+            <i class="fas fa-desktop"></i>
+            <div>
+              <span>Introduction to Packet Tracer</span>
+              <p>Cisco Networking Academy</p>
+              <small>Network simulation & configuration</small>
+            </div>
+          </div>
+          <div class="cert-card scroll-trigger">
+            <i class="fab fa-python"></i>
+            <div>
+              <span>Python Core</span>
+              <p>PCAP Certified Associate</p>
+              <small>Programming fundamentals</small>
+            </div>
+          </div>
+          <div class="cert-card scroll-trigger">
+            <i class="fas fa-database"></i>
+            <div>
+              <span>SQL & Database Design</span>
+              <p>Oracle Academy</p>
+              <small>Advanced querying & modeling</small>
+            </div>
+          </div>
+          <div class="cert-card scroll-trigger">
+            <i class="fab fa-python"></i>
+            <div>
+              <span>Django Web Framework</span>
+              <p>Full Stack Development</p>
+              <small>MVT architecture, REST APIs, authentication, ORM</small>
+            </div>
+          </div>
+        </div>
+        <div class="cert-highlight scroll-trigger">
+          <i class="fas fa-certificate"></i> <strong>Computer Systems Servicing NC II (TESDA)</strong> — certified in PC assembly, hardware troubleshooting, software installation, network setup, and peripheral maintenance.
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION - Pops up on scroll -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title scroll-trigger">⚙️ Technical & Professional Skills</h2>
+        <div class="skills-wrapper">
+          <span class="skill-badge scroll-trigger">HTML5 & CSS3</span>
+          <span class="skill-badge scroll-trigger">JavaScript / ES6</span>
+          <span class="skill-badge scroll-trigger">React.js</span>
+          <span class="skill-badge scroll-trigger">Python / Django</span>
+          <span class="skill-badge scroll-trigger">Node.js</span>
+          <span class="skill-badge scroll-trigger">Git & GitHub</span>
+          <span class="skill-badge scroll-trigger">MySQL / PostgreSQL</span>
+          <span class="skill-badge scroll-trigger">RESTful APIs</span>
+          <span class="skill-badge scroll-trigger">UI/UX Fundamentals</span>
+          <span class="skill-badge scroll-trigger">Responsive Web Design</span>
+          <span class="skill-badge scroll-trigger">Project Management</span>
+          <span class="skill-badge scroll-trigger">Team Collaboration</span>
+          <span class="skill-badge scroll-trigger">Web Development</span>
+          <span class="skill-badge scroll-trigger">Mobile Development</span>
+          <span class="skill-badge scroll-trigger">AI / Machine Learning</span>
+          <span class="skill-badge scroll-trigger">Firebase</span>
+          <span class="skill-badge scroll-trigger">Hardware Troubleshooting</span>
+        </div>
+        <p class="scroll-trigger" style="margin-top: 1.5rem;"><i class="fas fa-laptop-code"></i> Always expanding — currently diving into Next.js and cloud deployment strategies.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION - Pops up on scroll -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title scroll-trigger">📬 Let's Connect</h2>
+        <div class="contact-content scroll-trigger">
+          <div class="contact-info">
+            <div class="email-display">
+              <i class="fas fa-envelope"></i>
+              <span>mira.abdulkhalil@dnsc.edu.ph</span>
+            </div>
+            <p class="phone-display">
+              <i class="fas fa-phone-alt"></i> +63 992 675 5256
+            </p>
+            <div class="cert-highlight">
+              <i></i> "Exploring the intersection of design and code, building solutions that matter."
+            </div>
+          </div>
+          <div class="social-links">
+            <h3>Reach me on Social Media</h3>
+            <div class="social-buttons">
+              <a href="https://www.facebook.com/akmira1q" target="_blank" class="social-btn facebook">
+                <i class="fab fa-facebook-f"></i> Facebook
+              </a>
+              <a href="https://www.instagram.com/khalnotfoundd/" target="_blank" class="social-btn instagram">
+                <i class="fab fa-instagram"></i> Instagram
+              </a>
+              <a href="https://github.com/miraabdulkhalil" target="_blank" class="social-btn github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Abdul Khalil M. Mira — 4th Year IT Portfolio. Designed with exploration & growth in mind.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
