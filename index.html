@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Abdul Khalil Mira | IT Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -22,71 +23,107 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- HOME SECTION - No scroll-trigger, visible immediately -->
+    <!-- HOME SECTION -->
     <section id="home">
       <div class="container hero">
         <div class="hero-content">
-          <h1>Abdul Khalil M. Mira</h1>
+          <h1>Abdul Khalil Mira</h1>
           <p><span class="highlight">4th Year IT Student</span> | Explorer · Lifelong Learner · Builder</p>
           <p>A dedicated 4th-year IT student committed to developing innovative digital solutions that address real-world problems. Eager to apply technical knowledge and skills in a professional environment while continuously learning and adapting to emerging technologies.</p>
           <p style="margin-top: 1.2rem;"><i class="fas fa-map-marker-alt" style="color:#c0c0c0;"></i>  Davao Del Norte Philippines · Open for opportunities</p>
         </div>
         <div class="hero-image">
-          <img class="profile-pic" src="mypic.png" alt="Abdul Khalil M. Mira profile photo">
+          <img class="profile-pic" 
+               src="mypic.png" 
+               alt="Abdul Khalil Mira profile photo"
+               onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?background=c0c0c0&color=000&name=Abdul+Khalil+Mira';">
         </div>
       </div>
     </section>
 
-    
-
-
-    <!-- PROJECTS SECTION - Everything pops up on scroll -->
+    <!-- PROJECTS SECTION -->
     <section id="projects">
       <div class="container">
-        <h2 class="section-title scroll-trigger">📁 Projects Created</h2>
+        <div class="section-header">
+          <span class="section-tag scroll-trigger">✦ Featured Work</span>
+          <h2 class="section-title scroll-trigger">Projects I've <span class="accent">Created</span></h2>
+        </div>
         <div class="projects-grid">
-          <div class="project-card scroll-trigger">
-            <img class="project-img" src="eskwela.png" alt="E SKWELA platform">
+          <div class="project-card scroll-trigger" data-project="eskwela">
+            <div class="project-image">
+              <img src="eskwela.png" alt="E SKWELA platform">
+              <div class="project-overlay">
+                <span>Click to View Details →</span>
+              </div>
+            </div>
             <div class="project-info">
               <h3>E SKWELA</h3>
-              <p class="project-description">A web-based Alternative Learning System (ALS) platform that manages student registration, grade level assessment, learning modules, class schedules, teacher assignments, and administrative approval workflows for out-of-school youth and adult learners.</p>
-              <p class="tech-stack">(Django, SQLite3, HTML/CSS, JavaScript, FontAwesome, Bootstrap)</p>
+              <p>Alternative Learning System (ALS) platform</p>
+              <div class="project-tags">
+                <span>Django</span>
+                <span>SQLite3</span>
+                <span>Bootstrap</span>
+              </div>
             </div>
           </div>
-          <div class="project-card scroll-trigger">
-            <img class="project-img" src="papaya.png" alt="PapayaFresh AI app">
+          <div class="project-card scroll-trigger" data-project="papaya">
+            <div class="project-image">
+              <img src="papaya.png" alt="PapayaFresh AI app">
+              <div class="project-overlay">
+                <span>Click to View Details →</span>
+              </div>
+            </div>
             <div class="project-info">
               <h3>PapayaFresh</h3>
-              <p class="project-description">A mobile-based AI system that predicts papaya shelf life using image processing and CNN. Users capture or upload a papaya photo, and the app analyzes color and texture to classify ripeness stages (Unripe, Partially Ripe, Ripe, Overripe) and estimates remaining shelf life.</p>
-              <p class="tech-stack">(Flutter, TensorFlow Lite, Firebase, MobileNetV2)</p>
+              <p>AI-powered fruit ripeness detection</p>
+              <div class="project-tags">
+                <span>Flutter</span>
+                <span>TensorFlow Lite</span>
+                <span>MobileNetV2</span>
+              </div>
             </div>
           </div>
-          <div class="project-card scroll-trigger">
-            <img class="project-img" src="elect.png" alt="DevConnect Forum">
+          <div class="project-card scroll-trigger" data-project="devconnect">
+            <div class="project-image">
+              <img src="elect.png" alt="DevConnect Forum">
+              <div class="project-overlay">
+                <span>Click to View Details →</span>
+              </div>
+            </div>
             <div class="project-info">
               <h3>DevConnect Forum</h3>
-              <p class="project-description">Community-driven developer Q&A platform with markdown support, upvoting system, and user authentication — built using Django and Bootstrap.</p>
-              <p class="tech-stack">(Django, Bootstrap, SQLite, JavaScript)</p>
+              <p>Community-driven developer Q&A platform</p>
+              <div class="project-tags">
+                <span>Django</span>
+                <span>Bootstrap</span>
+                <span>JavaScript</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CERTIFICATES SECTION - Pops up on scroll -->
+    <!-- CERTIFICATES SECTION -->
     <section id="certificates">
       <div class="container">
-        <h2 class="section-title scroll-trigger">🎓 Certifications & Achievements</h2>
+        <div class="section-header">
+          <span class="section-tag scroll-trigger">✦ Achievements</span>
+          <h2 class="section-title scroll-trigger">Certifications & <span class="accent">Credentials</span></h2>
+        </div>
         <div class="certs-container">
           <div class="cert-card scroll-trigger">
             <i class="fas fa-desktop"></i>
             <div>
-              <span>Introduction to Packet Tracer</span>
+              <h3>Introduction to Packet Tracer</h3>
               <p>Cisco Networking Academy</p>
               <small>Network simulation & configuration</small>
             </div>
@@ -94,7 +131,7 @@
           <div class="cert-card scroll-trigger">
             <i class="fab fa-python"></i>
             <div>
-              <span>Python Core</span>
+              <h3>Python Core</h3>
               <p>PCAP Certified Associate</p>
               <small>Programming fundamentals</small>
             </div>
@@ -102,17 +139,17 @@
           <div class="cert-card scroll-trigger">
             <i class="fas fa-database"></i>
             <div>
-              <span>SQL & Database Design</span>
+              <h3>SQL & Database Design</h3>
               <p>Oracle Academy</p>
               <small>Advanced querying & modeling</small>
             </div>
           </div>
           <div class="cert-card scroll-trigger">
-            <i class="fab fa-python"></i>
+            <i class="fas fa-code"></i>
             <div>
-              <span>Django Web Framework</span>
+              <h3>Django Web Framework</h3>
               <p>Full Stack Development</p>
-              <small>MVT architecture, REST APIs, authentication, ORM</small>
+              <small>MVT architecture, REST APIs, ORM</small>
             </div>
           </div>
         </div>
@@ -122,38 +159,108 @@
       </div>
     </section>
 
-    <!-- SKILLS SECTION - Pops up on scroll -->
+    <!-- SKILLS SECTION -->
     <section id="skills">
       <div class="container">
-        <h2 class="section-title scroll-trigger">⚙️ Technical & Professional Skills</h2>
-        <div class="skills-wrapper">
-          <span class="skill-badge scroll-trigger">HTML5 & CSS3</span>
-          <span class="skill-badge scroll-trigger">JavaScript / ES6</span>
-          <span class="skill-badge scroll-trigger">React.js</span>
-          <span class="skill-badge scroll-trigger">Python / Django</span>
-          <span class="skill-badge scroll-trigger">Node.js</span>
-          <span class="skill-badge scroll-trigger">Git & GitHub</span>
-          <span class="skill-badge scroll-trigger">MySQL / PostgreSQL</span>
-          <span class="skill-badge scroll-trigger">RESTful APIs</span>
-          <span class="skill-badge scroll-trigger">UI/UX Fundamentals</span>
-          <span class="skill-badge scroll-trigger">Responsive Web Design</span>
-          <span class="skill-badge scroll-trigger">Project Management</span>
-          <span class="skill-badge scroll-trigger">Team Collaboration</span>
-          <span class="skill-badge scroll-trigger">Web Development</span>
-          <span class="skill-badge scroll-trigger">Mobile Development</span>
-          <span class="skill-badge scroll-trigger">AI / Machine Learning</span>
-          <span class="skill-badge scroll-trigger">Firebase</span>
-          <span class="skill-badge scroll-trigger">Hardware Troubleshooting</span>
+        <div class="section-header">
+          <span class="section-tag scroll-trigger">✦ Expertise</span>
+          <h2 class="section-title scroll-trigger">Technical & Professional <span class="accent">Skills</span></h2>
         </div>
-        <p class="scroll-trigger" style="margin-top: 1.5rem;"><i class="fas fa-laptop-code"></i> Always expanding — currently diving into Next.js and cloud deployment strategies.</p>
+        <div class="skills-container">
+          <div class="skill-category scroll-trigger">
+            <h3><i class="fas fa-code"></i> Frontend Development</h3>
+              <div class="skill-items">
+                <span>HTML5/CSS3</span>
+                <span>JavaScript/ES6</span>
+                <span>React.js</span>
+                <span>Bootstrap/Tailwind</span>
+                <span>Vue.js</span>
+                <span>Angular</span>
+                <span>TypeScript</span>
+                <span>Next.js</span>
+                <span>jQuery</span>
+                <span>Sass/SCSS</span>
+              </div>
+            </div>
+          <div class="skill-category scroll-trigger">
+            <h3><i class="fas fa-server"></i> Backend Development</h3>
+            <div class="skill-items">
+              <span>Python/Django</span>
+              <span>Node.js</span>
+              <span>RESTful APIs</span>
+              <span>MySQL/PostgreSQL</span>
+              <span>PHP/Laravel</span>
+              <span>Express.js</span>
+              <span>MongoDB</span>
+              <span>Firebase</span>
+              <span>GraphQL</span>
+              <span>JWT Authentication</span>
+            </div>
+          </div>
+          <div class="skill-category scroll-trigger">
+            <h3><i class="fas fa-mobile-alt"></i> Mobile & AI</h3>
+            <div class="skill-items">
+              <span>Flutter/Dart</span>
+              <span>TensorFlow Lite</span>
+              <span>Firebase</span>
+              <span>CNN Models</span>
+              <span>React Native</span>
+              <span>Kotlin/Java</span>
+              <span>Swift/iOS</span>
+              <span>OpenCV</span>
+              <span>PyTorch</span>
+              <span>ML Kit</span>
+            </div>
+          </div>
+         <div class="skill-category scroll-trigger">
+          <h3><i class="fas fa-tools"></i> Tools & Hardware</h3>
+          <div class="skill-items">
+            <span>Git/GitHub</span>
+            <span>PC Assembly</span>
+            <span>Hardware Troubleshooting</span>
+            <span>Network Configuration</span>
+            <span>Docker</span>
+            <span>VS Code</span>
+            <span>Postman</span>
+            <span>Linux/Ubuntu</span>
+            <span>Figma</span>
+            <span>Jira/Trello</span>
+          </div>
+        </div>
+              <div class="skill-category scroll-trigger">
+        <h3><i class="fas fa-database"></i> Databases</h3>
+        <div class="skill-items">
+          <span>MySQL</span>
+          <span>PostgreSQL</span>
+          <span>MongoDB</span>
+          <span>SQLite3</span>
+          <span>Firebase Firestore</span>
+          <span>Redis</span>
+          <span>Oracle DB</span>
+        </div>
+      </div>
+      <div class="skill-category scroll-trigger">
+        <h3><i class="fas fa-users"></i> Soft Skills</h3>
+        <div class="skill-items">
+          <span>Project Management</span>
+          <span>Team Collaboration</span>
+          <span>Problem Solving</span>
+          <span>Communication</span>
+          <span>Time Management</span>
+          <span>Leadership</span>
+          <span>Critical Thinking</span>
+        </div>
       </div>
     </section>
 
-    <!-- CONTACT SECTION - Pops up on scroll -->
+    <!-- CONTACT SECTION -->
     <section id="contact">
       <div class="container">
-        <h2 class="section-title scroll-trigger">📬 Let's Connect</h2>
-        <div class="contact-content scroll-trigger">
+        <div class="section-header">
+          <span class="section-tag scroll-trigger">✦ Get in touch</span>
+          <h2 class="section-title scroll-trigger">Let's <span class="accent">Connect</span></h2>
+        </div>
+        <div class="contact-content">
           <div class="contact-info">
             <div class="email-display">
               <i class="fas fa-envelope"></i>
@@ -186,8 +293,28 @@
   </main>
 
   <footer>
-    <p>© 2026 Abdul Khalil M. Mira — 4th Year IT Portfolio. Designed with exploration & growth in mind.</p>
+    <div class="container">
+      <div class="footer-content">
+        <p class="copyright">© 2024 Abdul Khalil Mira — IT Student & Developer</p>
+        <div class="footer-social">
+          <a href="https://github.com/miraabdulkhalil" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/akmira1q" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/khalnotfoundd/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
   </footer>
+
+  <!-- MODAL POPUP -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img id="modalImage" class="modal-image" src="" alt="Project image">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription" class="modal-description"></p>
+      <p id="modalTech" class="modal-tech"></p>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
