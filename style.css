@@ -615,3 +615,11 @@ footer {
     height: 30px;
   }
 }
+/* Hide navbar on scroll down, show on scroll up */
+header {
+  transition: transform 0.3s ease-in-out;
+}
+
+header.hide {
+  transform: translateY(-100%);
+}
