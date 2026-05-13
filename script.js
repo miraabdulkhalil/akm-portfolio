@@ -30,3 +30,22 @@ const handleScrollAnimation = () => {
 
 window.addEventListener('load', handleScrollAnimation);
 window.addEventListener('scroll', handleScrollAnimation);
+
+// ========================================
+// HIDE NAVBAR ON SCROLL DOWN, SHOW ON SCROLL UP
+// ========================================
+let lastScrollTop = 0;
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  
+  if (currentScroll > lastScrollTop && currentScroll > 100) {
+    // Scrolling down - hide navbar
+    header.classList.add('hide');
+  } else {
+    // Scrolling up - show navbar
+    header.classList.remove('hide');
+  }
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});
